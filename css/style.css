@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header ul{
+    display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 15px;
+padding: 0;
+margin: 10px;
+}
+
+/* GOOGLE AND IMAGES TEXT */
+header{
+    padding-right: 7px;
+}
+header ul li{
+    list-style: none;
+}
+/* GOOGLE AND IMAGES TEXT */
+header ul li a {
+    color: #5F6368;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* ICON AND IMAGE BOTH  */
+header ul > a{
+    border-radius: 50%;
+    padding: 10px;
+}
+/* ICON  */
+header ul  a i{
+    font-size: 18px;
+    color: #5F6368;
+}
+/* IMAGE  */
+header ul a img{
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+/* HOVER  */
+header ul li a:hover{
+    text-decoration: underline;
+}
+header ul > a:hover{
+    background-color: #F0F0F0;
+}
+.a-logo{
+    padding: 2px;
+}
+
+/* ALL DATA IN CENTER DIV  */
+.all-data{
+    flex-grow: 1;
+    /* background-color: gray; */
+    text-align: center;
+    
+}
+.center-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.center-div img{
+    height: 95px;
+}
+
+/* INPUT FIELD KA SB KUCH  */
+.input-div{
+    height: 45px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d7da;
+    /* padding-inline: 15px; */
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 25px;
+}
+.input-div:hover{
+    box-shadow: 0 0 10px rgba(67, 66, 66 , 0.3);
+}
+.input-div .left-input input{
+    margin-left: 10px;
+    height: 28px;
+    width: 400px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.input-div i{
+    color: #70757A;
+    font-size: 13px;
+}
+
+
+/* SEARCHBAR ICONS */
+.searchbar-icons{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    
+}
+.searchbar-icons img{ 
+    height: 21px;
+    cursor: pointer;
+}
+.focus-icon{
+    /* background-color: green; */
+    /* height: 100%; */
+    gap: 3px;
+    display: flex;
+    /* display: none; */
+    /* background-color: green; */
+    height: 20px;
+    width: 20px;
+}
+.focus-icon i{
+    font-size: 20px;
+    margin-right: 10px;
+    display: none;
+}
+.focus-icon hr{
+    margin: 0;
+    /* height: 100%; */
+    display: none;
+}
+
+/* BUTTONS  */
+.btns button{
+    margin-left: 4px;
+    background-color: #F8F9FA;
+    border: 1px solid transparent;
+    padding: 11px 16px;
+    border-radius: 6px;
+}
+.btns button:hover{
+    border: 1px solid #e9ebed;
+    cursor: pointer;
+}
+
+/* LANGUAGES */
+.language a{
+ text-decoration: none;
+}
+.language a:hover{
+    text-decoration: underline;
+}
+/* FOOTER DESIGN  */
+footer{
+    background-color: #F2F2F2;
+    /* height: 94px; */
+    /* padding-block: 20px; */
+}
+.text1{
+    padding-inline: 30px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+footer hr{
+    margin-block: 13px;
+    opacity: 0.3;
+}
+.text2{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    padding-bottom: 16px;
+}
+.text2 a{
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+}
+.text2 a:hover{
+    text-decoration: underline;
+}

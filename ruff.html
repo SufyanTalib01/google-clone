@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Field with Cross Icon</title>
+    <style>
+        .cross-icon {
+            display: none; /* Initially hide the cross icon */
+        }
+        .input-active + .cross-icon {
+            display: inline; /* Show cross icon when input is active */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="inputField">
+        <span id="crossIcon" class="cross-icon">✖</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputField = document.getElementById('inputField');
+            const crossIcon = document.getElementById('crossIcon');
+
+            inputField.addEventListener('focus', () => {
+                crossIcon.style.display = 'inline';
+            });
+
+        
+            document.addEventListener('click', (event) => {
+                if (!inputField.contains(event.target) && !crossIcon.contains(event.target)) {
+                    crossIcon.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
