@@ -64,6 +64,8 @@ header ul > a:hover{
     flex-grow: 1;
     /* background-color: gray; */
     text-align: center;
+    display: flex;
+    justify-content: center;
     
 }
 .center-div{
@@ -72,15 +74,16 @@ header ul > a:hover{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    transform: translateY(-50px);
 }
 .center-div img{
-    height: 95px;
+    height: 22%;
 }
 
 /* INPUT FIELD KA SB KUCH  */
 .input-div{
     height: 45px;
-    width: 550px;
+    width: 98%;
     display: flex;
     align-items: center;
     border: 1px solid #d4d7da;

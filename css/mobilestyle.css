@@ -1,0 +1,77 @@
+@media (max-width: 769px){
+    header ul{
+        gap: 10px;
+    }
+    header ul li a{
+        font-size: 12px;
+    }
+    header ul a i{
+        font-size: 14px;
+    }
+    header ul  a img{
+        height: 27px;
+    }
+    .center-div{
+        gap: 26px;
+    }
+    .center-div > img{
+        height: 19%;
+    }
+    .input-div{
+        height: 35px;
+        width: 88%;
+    }
+    .input-div .left-input input{
+        width: 344px;
+    }
+    .searchbar-icons{
+        height: 19px;
+    }
+    .btns  button{
+        font-size: 11px;
+        padding: 7px 9px;
+    }
+    .language{
+        font-size: 12px;
+    }
+    .text1{
+        font-size: 12px;
+    }
+    .text2{
+        justify-content: space-around;
+    }
+    .text2 a{
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width: 426px){
+    .center-div{
+        width: 97%;
+    }
+    .input-div{
+        width: 83%;
+    }
+    .input-div .left-input input{
+        /* width: 207px; */
+        width: 82%;
+    }
+    .searchbar-icons{
+        height: 17px;
+    }
+}
+
+@media (max-width: 376px){
+    .input-div .left-input input{
+        /* width: 169px; */
+        width: 82%;
+    }
+}
+@media (max-width: 321px){
+    .input-div .left-input input{
+        /* width: 126px; */
+        width: 79%;
+    }
+}
