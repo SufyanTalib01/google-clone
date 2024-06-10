@@ -1,3 +1,5 @@
+/* FOR TABLET MODE  */
+
 @media (max-width: 769px){
     header ul{
         gap: 10px;
@@ -46,6 +48,7 @@
 }
 
 
+/* FOR LARGE MOBILE MODE  */
 
 @media (max-width: 426px){
     .center-div{
@@ -61,17 +64,27 @@
     .searchbar-icons{
         height: 17px;
     }
+    .text2{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+/* FOR SMALL MOBILE  */
 @media (max-width: 376px){
     .input-div .left-input input{
         /* width: 169px; */
         width: 82%;
     }
 }
+
+/* FOR MINI MOBILE  */
 @media (max-width: 321px){
     .input-div .left-input input{
         /* width: 126px; */
         width: 79%;
+    }
+    .text2 a{
+        font-size: 9px;
     }
 }
