@@ -1,8 +1,6 @@
 let FocusSearch = document.getElementById('focus-search');
 let CrossIcon = document.getElementById('cross-mark');
 let HrIcon = document.getElementById('hr-mark');
-let MainContainer = document.getElementById('main-container');
-
 FocusSearch.addEventListener('click' , function(){
     CrossIcon.style.display = 'block';
     HrIcon.style.display = 'block';
@@ -16,7 +14,8 @@ FocusSearch.addEventListener('click' , function(){
     });
 })
 
-// MainContainer.addEventListener('click' , function(){
-//     CrossIcon.style.display = 'none';
-//     HrIcon.style.display = 'none';
-// })
+
+CrossIcon.addEventListener('click' , function(){
+    FocusSearch.value = "";
+}
+)

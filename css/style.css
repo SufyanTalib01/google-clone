@@ -1,3 +1,8 @@
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 body{
     margin: 0;
     padding: 0;
@@ -8,12 +13,26 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+.trending{
+    display: none;
+}
+
+/* HEADER FOR RESPONSIVE MODE  */
+.responsive-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+.responsive-div ul li a{
+    font-weight: bold;
+}
 
 header ul{
-    display: flex;
+display: flex;
 justify-content: flex-end;
 align-items: center;
-gap: 15px;
+gap: 20px;
 padding: 0;
 margin: 10px;
 }
@@ -36,6 +55,7 @@ header ul > a{
     border-radius: 50%;
     padding: 10px;
 }
+
 /* ICON  */
 header ul  a i{
     font-size: 18px;
@@ -77,7 +97,7 @@ header ul > a:hover{
     transform: translateY(-50px);
 }
 .center-div img{
-    height: 22%;
+    height: 95px;
 }
 
 /* INPUT FIELD KA SB KUCH  */
@@ -93,7 +113,7 @@ header ul > a:hover{
     border-radius: 25px;
 }
 .input-div:hover{
-    box-shadow: 0 0 10px rgba(67, 66, 66 , 0.3);
+    box-shadow: 0 0 10px rgba(188, 185, 185, 0.3);
 }
 .input-div .left-input input{
     margin-left: 10px;
@@ -150,7 +170,7 @@ header ul > a:hover{
     border-radius: 6px;
 }
 .btns button:hover{
-    border: 1px solid #e9ebed;
+    border: 1px solid #cdced0;
     cursor: pointer;
 }
 
@@ -190,4 +210,7 @@ footer hr{
 }
 .text2 a:hover{
     text-decoration: underline;
+}
+#res-text2{
+    display: none;
 }

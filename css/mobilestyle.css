@@ -1,8 +1,62 @@
 /* FOR TABLET MODE  */
 
 @media (max-width: 769px){
+    .all-data{
+        flex-direction: column;
+    }
+    /* TRENDING LINE  */
+    .trending{
+        display: block;
+    }
+    .h-trend{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        padding-inline: 20px;
+        
+    }
+    .h-trend i{
+        font-size: 15px;
+    }
+    .t1{
+        display: flex;
+        padding-inline: 28px;
+        gap: 22px;
+        margin-top: 30px;
+    }
+    .trending hr{
+        margin-block: 17px;
+        opacity: 0.3;
+        margin-inline: 16px;
+    }
+    /* TRENDING LINE END  */
+    header{
+        display: none;
+        padding-right: 0px;
+    }
+    .responsive-div{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .right-nav i{
+        font-size: 18px;
+    }
+    .right-nav li a img{
+        height: 30px;
+    }
+
+    /* LEFT NAV  */
+    .left-nav li a i{
+        font-size: 18px;
+    }
+    .left-nav ul li a {
+        font-size: 12px;
+    }
+
     header ul{
-        gap: 10px;
+        gap: 20px;
     }
     header ul li a{
         font-size: 12px;
@@ -15,35 +69,70 @@
     }
     .center-div{
         gap: 26px;
+        width: 100vw;
+        margin-top: 90px;
     }
     .center-div > img{
-        height: 19%;
+        height: 53px;
     }
     .input-div{
-        height: 35px;
-        width: 88%;
+        height: 38px;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .input-div:hover{
+        box-shadow: 0 0 0px rgba(188, 185, 185, 0);
+    }
+    .input-div i{
+        font-size: 16px;
+        color: #9AA0A6;
     }
     .input-div .left-input input{
-        width: 344px;
+        width: 343px;
     }
+    
     .searchbar-icons{
         height: 19px;
+        margin-right: 9px;
     }
-    .btns  button{
-        font-size: 11px;
-        padding: 7px 9px;
+    .btns{
+        display: none;
     }
     .language{
-        font-size: 12px;
+        font-size: 13px;
+    }
+    .language a{
+        color: #1558D6;
+        margin-right: 16px;
+    }
+    .language span{
+        margin-right: 10px;
     }
     .text1{
-        font-size: 12px;
+        font-size: 16px;
+        padding-inline: 10px;
+        color: rgb(94, 94, 94);
+        padding-top: 7px;
     }
     .text2{
         justify-content: space-around;
     }
     .text2 a{
-        font-size: 11px;
+        font-size: 13px;
+        color: rgb(114, 114, 114);
+        margin-right: 20px;
+    }
+    .text2{
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        
+    }
+    .text2{
+        display: none;
+    }
+    #res-text2{
+        display: flex;
     }
 }
 
@@ -53,9 +142,11 @@
 @media (max-width: 426px){
     .center-div{
         width: 97%;
+        margin-top: 103px;
+        align-self: center;
     }
     .input-div{
-        width: 83%;
+        width: 93%;
     }
     .input-div .left-input input{
         /* width: 207px; */
@@ -64,10 +155,12 @@
     .searchbar-icons{
         height: 17px;
     }
-    .text2{
-        flex-direction: column;
-        align-items: center;
+   
+    
+    header ul > a {
+        padding: 3px;
     }
+    
 }
 
 /* FOR SMALL MOBILE  */
@@ -76,15 +169,32 @@
         /* width: 169px; */
         width: 82%;
     }
+    .searchbar-icons{
+        padding-right: 6px;
+    }
 }
 
 /* FOR MINI MOBILE  */
 @media (max-width: 321px){
     .input-div .left-input input{
         /* width: 126px; */
-        width: 79%;
+        width: 77%;
+    }
+    .text2{
+        padding-inline: 0;
+        gap: 20px;
     }
     .text2 a{
-        font-size: 9px;
+        font-size: 14px;
+        margin-right: 0px;
     }
+    #lefttext{
+        display: flex;
+        gap: 21px;
+    }
+    #righttext{
+        display: flex;
+        gap: 21px;
+    }
+   
 }
